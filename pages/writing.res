@@ -1,3 +1,5 @@
+@bs.module("babel-plugin-preval/macro") external preval: string => 'a = "default"
+
 type article = {
   description: string,
   path: string,
@@ -5,10 +7,9 @@ type article = {
   title: string,
 }
 
-// Must rely upon a JavaScript file until ESM default exports are supported.
-// https://github.com/BuckleScript/bucklescript/issues/2113
-@bs.module("../utils/articles")
-external articles: array<article> = "default"
+let articles: array<
+  article,
+> = preval(`module.exports = require('../scripts/mapMarkdownFilesToData.js');`)
 
 @react.component
 let default = () =>
