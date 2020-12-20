@@ -3,6 +3,7 @@
   "sources": [
     { "dir": "components", "subdirs": true },
     { "dir": "pages", "subdirs": true },
+    { "dir": "scripts", "subdirs": true },
     { "dir": "utils", "subdirs": true }
   ],
   "bs-dependencies": ["reason-react", "bs-webapi"],

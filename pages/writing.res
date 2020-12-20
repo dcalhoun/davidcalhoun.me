@@ -7,9 +7,7 @@ type article = {
   title: string,
 }
 
-let articles: array<
-  article,
-> = preval(`module.exports = require('../scripts/mapMarkdownFilesToData.js');`)
+let articles: array<article> = preval(`module.exports = require('../scripts/Markdown.bs.js');`)
 
 @react.component
 let default = () =>
