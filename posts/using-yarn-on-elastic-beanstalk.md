@@ -1,6 +1,6 @@
 ---
-description: "A brief overview of setting up Yarn on Elastic Beanstalk.",
-published: "2018-04-15",
+description: "A brief overview of setting up Yarn on Elastic Beanstalk."
+published: "2018-04-15"
 title: "Using Yarn on Elastic Beanstalk"
 ---
 

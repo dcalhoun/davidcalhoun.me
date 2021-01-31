@@ -1,7 +1,6 @@
 ---
-description:
-  "An overview of using Homebrew to manage development packages on macOS.",
-published: "2013-12-16",
+description: "An overview of using Homebrew to manage development packages on macOS."
+published: "2013-12-16"
 title: "Developer Tools: Homebrew"
 ---
 

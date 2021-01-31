@@ -1,6 +1,6 @@
 ---
-description: "My journey to understand the benefits and use-cases of Yeoman.",
-published: "2013-10-30",
+description: "My journey to understand the benefits and use-cases of Yeoman."
+published: "2013-10-30"
 title: "Migration to Jekyll: Understanding Yeoman"
 ---
 
