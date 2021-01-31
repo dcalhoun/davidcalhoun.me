@@ -1,15 +1,9 @@
-import { make as Layout } from "../../components/Layout.bs";
-import { make as Post } from "../../components/Post.bs";
-
-export let meta = {
-  description:
-    "An overview of using Homebrew to manage development packages on macOS.",
-  published: "2013-12-16",
-  title: "Developer Tools: Homebrew"
-};
-
-<Layout>
-<Post {...meta}>
+---
+description:
+  "An overview of using Homebrew to manage development packages on macOS.",
+published: "2013-12-16",
+title: "Developer Tools: Homebrew"
+---
 
 I recently received a new MacBook Pro &amp; went through the motions of setting up my development environment. One of my favorite tools for managing my environment is the Mac OS X package manager tool [Homebrew](http://brew.sh/). The following is a brief overview/tutorial of Homebrew.
 
@@ -58,6 +52,3 @@ brew uninstall node # uninstalls a specific package
 ```
 
 That&rsquo;s it! For most use cases that will be all you need. There are additional commands &amp; more information available on the [wiki](https://github.com/Homebrew/homebrew/wiki) if you&rsquo;d like to continue reading more about Homebrew. If you have any questions, feel free to leave a comment below.
-
-</Post>
-</Layout>

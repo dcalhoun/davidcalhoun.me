@@ -1,14 +1,8 @@
-import { make as Layout } from "../../components/Layout.bs";
-import { make as Post } from "../../components/Post.bs";
-
-export let meta = {
-  description: "My journey to understand the benefits and use-cases of Yeoman.",
-  published: "2013-10-30",
-  title: "Migration to Jekyll: Understanding Yeoman"
-};
-
-<Layout>
-<Post {...meta}>
+---
+description: "My journey to understand the benefits and use-cases of Yeoman.",
+published: "2013-10-30",
+title: "Migration to Jekyll: Understanding Yeoman"
+---
 
 I&rsquo;ve been wanting to wrap my head around [Yeoman](http://yeoman.io/) for a while now. It seemed every time I found a moment of free time to dive into understanding Yeoman, my brain was already fried from that day&rsquo;s job-related development work. I continued to spin-up a generic &ldquo;webapp&rdquo; generator & failed to understand the seemingly complex ideas behind Yeoman. This process continued until now, when I decided to move my personal site to GitHub pages & Jekyll. I wanted to share my experience and provide a brief overview/tutorial of using Yeoman.
 
@@ -58,6 +52,3 @@ grunt buildcontrol:pages
 All in all I&rsquo;m very happy to finally have a high-level understanding of the benefits of Yeoman. I look forward to exploring creating custom generators of my own to speed up my workflow, as well as streamline project spin-up for my coworkers.
 
 If you have any questions or comments about using Yeoman, Grunt or the jekyllrb generator, feel free to leave comments below.
-
-</Post>
-</Layout>

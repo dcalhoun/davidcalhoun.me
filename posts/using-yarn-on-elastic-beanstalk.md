@@ -1,14 +1,8 @@
-import { make as Layout } from "../../components/Layout.bs";
-import { make as Post } from "../../components/Post.bs";
-
-export let meta = {
-  description: "A brief overview of setting up Yarn on Elastic Beanstalk.",
-  published: "2018-04-15",
-  title: "Using Yarn on Elastic Beanstalk"
-};
-
-<Layout>
-<Post {...meta}>
+---
+description: "A brief overview of setting up Yarn on Elastic Beanstalk.",
+published: "2018-04-15",
+title: "Using Yarn on Elastic Beanstalk"
+---
 
 At GoNoodle, our team uses [Yarn](https://yarnpkg.com/) to manage our packages. We moved to Yarn from npm for improved install speeds and the deterministic benefits of its lock file.
 We recently moved from serving our web applications from static files on S3 to server rendering with Node instances on Elastic Beanstalk. That posed a problem as AWS support stated that support for Yarn is not provided on Elastic Beanstalk. The good news is that it is fairly simple to setup yourself.
@@ -73,6 +67,3 @@ Deleting/renaming a platform hook in your project will not delete/rename the pla
 ### Maintenance
 
 Elastic Beanstalk [solution stacks](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html), the convenient packaged stacks provided by Amazon, utilize platform hooks as well. So, if Amazon decides to significantly modify the platform hooks included in your chosen solution stack, that could potentially cause breakages in your hooks. You’ll want to test upgrades to your solution stack in a staging environment before applying them to production.
-
-</Post>
-</Layout>
