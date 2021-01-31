@@ -5,10 +5,8 @@ type article = {
   title: string,
 }
 
-// Must rely upon a JavaScript file until ESM default exports are supported.
-// https://github.com/BuckleScript/bucklescript/issues/2113
-@bs.module("../utils/articles")
-external articles: array<article> = "default"
+// TODO: Load articles from file system
+let articles = []
 
 @react.component
 let default = () =>
